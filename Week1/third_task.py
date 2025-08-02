@@ -1,7 +1,8 @@
 import numpy as np
 
-# Weekly temperature data in Celsius
+# Define temperature and day arrays
 celsius_temps = np.array([18.5, 19, 20, 25.0, 22, 30, 13.9]) 
+day_array = np.array(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
 
 # 1. average temperature
 average_temp = np.mean(celsius_temps)
@@ -13,13 +14,13 @@ min_temp = np.min(celsius_temps)
 print(f"Highest temperature: {max_temp}°C")
 print(f"Lowest temperature: {min_temp}°C")
 
-# 3. Convert all temperatures to Fahrenheit and print
+# 3. Convert to Fahrenheit
 fahrenheit_temps = celsius_temps * 9/5 + 32
 print("Temperatures in Fahrenheit:")
 print(fahrenheit_temps)
 
-# 4. Find indices where temperature > 20°C
-indices = np.where(celsius_temps > 20)[0]  # [0] gets the actual indices, not a tuple
-# Print the result
-print("Indices of days with temperature > 20°C:")
-print(indices)
+# 4. Days where temperature > 20°C
+indices = np.where(celsius_temps > 20)[0]
+print("Days with temperature > 20°C:")
+for i in indices:
+    print(f"{day_array[i]}: {celsius_temps[i]}°C")
