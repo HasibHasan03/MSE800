@@ -14,13 +14,13 @@ class StringManipulator:
     def to_lowercase(self):
         return self.text.lower()
 
+def main():
+    # Emam usage of the StringManipulator class and its methods
+    manipulator = StringManipulator("Emam")
+    print(f"Index of 'm' {manipulator.find_char('a')}")  
+    print(f"Length of string: {manipulator.get_length()}")     
+    print(f"Uppercase: {manipulator.to_uppercase()}")   
+    print(f"Lowercase: {manipulator.to_lowercase()}")   
 
-# to initialize the class and use its methods
-name = StringManipulator("Emam")
-
-result = name.find_char('m')  
-length = name.get_length()
-uppercase = name.to_uppercase() 
-print(f"Index of 'm': {result}")
-print(f"Length of string: {length}")
-print(f"Uppercase: {uppercase}")
+if __name__ == "__main__":
+    main()
