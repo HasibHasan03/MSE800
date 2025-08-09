@@ -2,7 +2,7 @@ import random
 
 def get_random_word():
     # You can expand this list or load from a file
-    words = ['python', 'hangman', 'challenge', 'programming', 'algorithm', 'computer']
+    words = ['python', 'java', 'challenge', 'programming', 'algorithm', 'computer']
     return random.choice(words).lower()
 
 def display_word(word, guessed_letters):
