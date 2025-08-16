@@ -1,0 +1,47 @@
+The purpose of this database project is to efficiently store, manage, and analyze academic 
+information within a university system. The database will track key entities such as Students, 
+Lecturers, Courses, and Enrollments, ensuring that relationships between them are clearly defined. 
+Students can register for multiple courses, each course is taught by one or more lecturers, and 
+enrollment records link students to their chosen courses. The scope includes maintaining accurate 
+records of student details, lecturer profiles, course structures, and enrollment history, 
+providing a reliable foundation for academic management, reporting, and future data analysis.
+
+Entities & Attributes
+
+1. Student
+-------------------------------
+student_id (PK)
+name
+email
+date_of_birth
+
+2. Lecturer
+-------------------------------
+lecturer_id (PK)
+name
+email
+department
+
+3. Course
+-------------------------------
+course_id (PK)
+course_name
+credits
+
+4. Enrollment (associative entity between Student and Course)
+---------------------------------------------------------------------------------
+enrollment_id (PK)
+student_id (FK) → Student
+course_id (FK) → Course
+enrollment_date
+grade
+
+5. Course_Lecturer (associative entity for many-to-many Course ↔ Lecturer)
+---------------------------------------------------------------------------------
+course_id (FK) → Course
+lecturer_id (FK) → Lecturer
+
+** Relationships
+-------------------------------
+Student ↔ Course → Many-to-Many via Enrollment
+Course ↔ Lecturer → Many-to-Many via Course_Lecturer
