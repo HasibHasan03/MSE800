@@ -12,15 +12,15 @@ Menu Options
 
 Main Menu (Actors)
 
-    1 → Manage Students
+    1 → Manage Admin
 
-    2 → Manage Courses
+    2 → Manage Students
 
     3 → Manage Lectures
 
     0 → Exit
 
-Inside each menu (Students/Courses/Lectures) - (Cases):
+Inside each menu (Admin) - (Cases):
 
     1 → Add record
 
@@ -29,6 +29,12 @@ Inside each menu (Students/Courses/Lectures) - (Cases):
     3 → Edit record
 
     4 → Delete record
+
+    0 → Back to main menu
+
+Inside each menu (Students/Lectures) - (Cases):
+
+    21 → View all records (Students/Lectures)
 
     0 → Back to main menu
 
