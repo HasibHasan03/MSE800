@@ -34,7 +34,7 @@ Inside each menu (Admin) - (Cases):
 
 Inside each menu (Students/Lectures) - (Cases):
 
-    21 → View all records (Students/Lectures)
+    1 → View all records (Students/Lectures)
 
     0 → Back to main menu
 
