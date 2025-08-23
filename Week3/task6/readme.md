@@ -10,7 +10,7 @@ This will automatically create the database (school.db) and the required tables.
 
 Menu Options
 
-Main Menu
+Main Menu (Actors)
 
     1 → Manage Students
 
@@ -20,7 +20,7 @@ Main Menu
 
     0 → Exit
 
-Inside each menu (Students/Courses/Lectures):
+Inside each menu (Students/Courses/Lectures) - (Cases):
 
     1 → Add record
 
@@ -31,3 +31,6 @@ Inside each menu (Students/Courses/Lectures):
     4 → Delete record
 
     0 → Back to main menu
+
+## Diagram 
+![Cases with actors diagram](diagram.png)
