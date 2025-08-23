@@ -39,4 +39,4 @@ Inside each menu (Students/Lectures) - (Cases):
     0 → Back to main menu
 
 ## Diagram 
-![Cases with actors diagram](diagram.png)
+![Cases with actors diagram](diagramERD.png)
